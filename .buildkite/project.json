@@ -3,8 +3,15 @@
   "steps": [
     {
       "type": "script",
-      "name": ":pipeline:",
-      "command": "buildkite-agent pipeline upload"
+      "name": ":rocket: Master",
+      "command": "rsync -avR --exclude '.git/' . /var/www/vhosts/domain.com/httpdocs/www/",
+      "branches": "master"
+    },
+    {
+      "type": "script",
+      "name": ":rocket: Branch",
+      "command": "rsync -avR --exclude '.git/' . /var/www/vhosts/domain.com/httpdocs/www/$BUILDKITE_BRANCH",
+      "branches": "!master"
     }
   ]
 }

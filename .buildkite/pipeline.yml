@@ -1,7 +1,0 @@
-steps:
-  - name: ":rocket: Master"
-    command: "rsync -avR --exclude '.git/' . /var/www/vhosts/domain.com/httpdocs/www/"
-    branches: master
-  - name: ":rocket: Branch"
-    command: "rsync -avR --exclude '.git/' . /var/www/vhosts/domain.com/httpdocs/$BUILDKITE_BRANCH/"
-    branches: "!master"
