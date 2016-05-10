@@ -1,5 +1,5 @@
 {
-  "name": "Simple Deployment Example",
+  "name": "Static Site Deployment Example",
   "steps": [
     {
       "type": "script",

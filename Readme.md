@@ -1,4 +1,4 @@
-# Buildkite Simple Deployment Example
+# Buildkite Static Site Deployment Example
 
 [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
 
