@@ -9,7 +9,7 @@ It's recommended that deploy agents run under their own queue, such as `deploy`.
 Files to note:
 
 * [.buildkite/project.json](.buildkite/project.json) - the two simple steps for deploying files using rsync
-* [vhost.example.yml](vhost.example.yml) - an example Apache vhost configuration file
+* [vhost.example.conf](vhost.example.conf) - an example Apache vhost configuration file
 
 ## License
 
