@@ -10,7 +10,7 @@
     {
       "type": "script",
       "name": ":rocket: Branch",
-      "command": "rsync -avR --exclude '.git/' . /var/www/vhosts/domain.com/httpdocs/www/$BUILDKITE_BRANCH",
+      "command": "rsync -avR --exclude '.git/' . /var/www/vhosts/domain.com/httpdocs/$BUILDKITE_BRANCH",
       "branches": "!master"
     }
   ]
